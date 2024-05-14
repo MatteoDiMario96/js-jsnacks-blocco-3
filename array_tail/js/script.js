@@ -15,6 +15,16 @@ for(let i = arrayVuoto.length - 1; i > arrayVuoto.length - 6; i--){
     console.log(arrayVuoto[i])
 }
 
+let numeroElementiStampati = Number.parseInt(prompt("Dimmi in numero quanti elementi vorresti visualizzare dell'arrey in console..."))
+
+if(numeroElementiStampati > NumeroUtente){
+    console.log("Mi dispiace, hai fatto male i conti, cosi non possiamo farlo. ")
+}
+
+for(let i = arrayVuoto.length - 1; i > arrayVuoto.length - (numeroElementiStampati + 1); i--){
+    console.log("Scelto dall'utente:",arrayVuoto[i])
+}
 
 
+console.log(arrayVuoto)
 
