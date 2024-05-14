@@ -17,7 +17,7 @@ Sì, lo sappiamo che esistono le funzioni includes() e indexOf() ma noi non le v
 
 - Creiamo un array dove mettiamo le cose del frigorifero
 
-- Creiamo una variabile e gli assegniamo il valore "pesca"
+- Aggiungiamo al frigorifero l'elemento pesca
 
 - Mettiamo la pesca dentro l'array frigorifero
 
