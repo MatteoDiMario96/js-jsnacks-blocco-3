@@ -11,5 +11,10 @@ for( let i = 0; i < NumeroUtente; i++){
     arrayVuoto.push(Math.floor(Math.random() * 100) + 1)
 }
 
+for(let i = arrayVuoto.length - 1; i > arrayVuoto.length - 6; i--){
+    console.log(arrayVuoto[i])
+}
+
+
 
 
