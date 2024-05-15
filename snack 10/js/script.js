@@ -7,8 +7,17 @@
 
 // - Continuo a chiedere numeri finche la loro somma non arriva almeno a 50. 
 
+const arrayVuoto = [];
 
+let numeroUtente;
+let somma = 0 + numeroUtente ; 
 
+while (somma >= 50){
+    numeroUtente = Number.parseInt(prompt("Type a number!"), 10)
+    if(Number.isNaN(numeroUtente)){
+        numeroUtente = Number.parseInt(prompt("Type a number!"), 10)
+    }
+}
 
 
 
