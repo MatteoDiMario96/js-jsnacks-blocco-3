@@ -22,8 +22,10 @@ if(arrayA.lenght > arrayB.lenght){
     shortArray = arrayA
 }
 
-while(shortArray < longArray){
-    shortArray.phus(Math.floor(Math.random() * 100) + 1)
+let shortArrayLenght;
+
+while(shortArrayLenght < longArray.lenght){
+    shortArray.push(Math.floor(Math.random() * 100) + 1)
 }
 
 console.log(arrayA, arrayB)
