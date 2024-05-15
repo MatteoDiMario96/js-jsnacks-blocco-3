@@ -10,17 +10,18 @@
 const arrayVuoto = [];
 
 let numeroUtente;
-let somma = 0 + numeroUtente ; 
+let somma = 0; 
 
-while (somma >= 50){
+while (somma <= 50){
     numeroUtente = Number.parseInt(prompt("Type a number!"), 10)
+    somma = somma + numeroUtente
     if(Number.isNaN(numeroUtente)){
         numeroUtente = Number.parseInt(prompt("Type a number!"), 10)
     }
     arrayVuoto.push(numeroUtente)
 }
 
-console.log()
+console.log(arrayVuoto, somma)
 
 
 
