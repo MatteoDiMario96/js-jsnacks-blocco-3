@@ -3,16 +3,13 @@
 
 const arrayVuoto = [];
 
-let numeroUtente;
-let numeroUtenteDisparo = numeroUtente % 2 === 1;
-
 while(arrayVuoto.length < 6){
-    numeroUtente = Number.parseInt(prompt("Type a number"), 10);
+    let userNumber = Number.parseInt(prompt("Type a number!"), 10)
+    if(Number.isNaN(userNumber)!== true && userNumber % 2 === 1){
+        arrayVuoto.push(userNumber)
+    }
 }
 
-if(numeroUtenteDisparo){
-    arrayVuoto.push(numeroUtente)
-}
 console.log(arrayVuoto)
 
 
