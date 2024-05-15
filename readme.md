@@ -47,6 +47,8 @@ Probabilmente  conviene controllare che il numero di elementi della coda non sia
 - Creiamo un array vuoto
 
 - Chiediamo all'utente quanti elementi dovremmo aggiungere nell'arrey.
+
+-Crea un ciclo fino al numero inserito dall'utente 
     - Ogni elemento aggiunto dovrà essere un numero casuale da 1 a 100
 
 - Stampiamo in console gli ultimi 5 elementi dell'arrey 
