@@ -17,7 +17,10 @@ while (somma >= 50){
     if(Number.isNaN(numeroUtente)){
         numeroUtente = Number.parseInt(prompt("Type a number!"), 10)
     }
+    arrayVuoto.push(numeroUtente)
 }
+
+console.log()
 
 
 
