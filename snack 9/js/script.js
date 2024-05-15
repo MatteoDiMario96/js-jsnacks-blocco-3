@@ -22,9 +22,7 @@ if(arrayA.lenght > arrayB.lenght){
     shortArray = arrayA
 }
 
-let shortArrayLenght;
-
-while(shortArrayLenght < longArray.lenght){
+while(shortArray.length < longArray.length){
     shortArray.push(Math.floor(Math.random() * 100) + 1)
 }
 
