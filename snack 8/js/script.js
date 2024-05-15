@@ -2,8 +2,11 @@
 //  se è dispari inseriscilo nell'array.
 
 const arrayVuoto = [];
+let numeroUtente;
 while(arrayVuoto.length(6)){
-    let numeroUtente = Number.parseInt(prompt("Type a number"), 10);
+    numeroUtente = Number.parseInt(prompt("Type a number"), 10);
 }
 
-if
+if(numeroUtente % 2 === 1 ){
+    arrayVuoto.push(numeroUtente)
+}
