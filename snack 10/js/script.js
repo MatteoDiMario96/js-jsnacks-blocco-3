@@ -15,8 +15,9 @@ let somma = 0;
 while (somma <= 50){
     numeroUtente = Number.parseInt(prompt("Type a number!"), 10)
     somma = somma + numeroUtente
-    if(Number.isNaN(numeroUtente)){
+    while(Number.isNaN(numeroUtente)){
         numeroUtente = Number.parseInt(prompt("Type a number!"), 10)
+        console.log("you wrong typing!")
     }
     arrayVuoto.push(numeroUtente)
 }
