@@ -3,10 +3,14 @@
 
 const arrayVuoto = [];
 let numeroUtente;
-while(arrayVuoto.length(6)){
+arrayVuoto.lenght = 0;
+numeroUtenteDisparo = numeroUtente % 2 === 1;
+
+while(arrayVuoto.lenght = 6){
     numeroUtente = Number.parseInt(prompt("Type a number"), 10);
 }
 
-if(numeroUtente % 2 === 1 ){
+if(numeroUtenteDisparo){
     arrayVuoto.push(numeroUtente)
 }
+console.log(arrayVuoto)
