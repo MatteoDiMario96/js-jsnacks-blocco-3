@@ -12,14 +12,14 @@ const arrayVuoto = [];
 let numeroUtente;
 let somma = 0; 
 
-while (somma <= 50){
-    numeroUtente = Number.parseInt(prompt("Type a number!"), 10)
-    somma = somma + numeroUtente
-    while(Number.isNaN(numeroUtente)){
-        numeroUtente = Number.parseInt(prompt("Type a number!"), 10)
+while (somma < 50){
+    let numeroUtente = Number.parseInt(prompt("Type a number!"), 10)
+    if(Number.isNaN(numeroUtente) !== true){
+        somma += numeroUtente
+        arrayVuoto.push(numeroUtente)
+    } else {
         console.log("you wrong typing!")
     }
-    arrayVuoto.push(numeroUtente)
 }
 
 console.log(arrayVuoto, somma)
