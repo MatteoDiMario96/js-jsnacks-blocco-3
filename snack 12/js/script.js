@@ -30,7 +30,7 @@ function lunghezzaParole (parolaA, parolaB){
     }
 }
 
-const parolaUtenteA = prompt("Dammi una parola");
-const parolaUtenteB = prompt("Dammi una parola");
+const parolaUtenteA = prompt("Dammi la prima parola");
+const parolaUtenteB = prompt("Dammi la seconda parola");
 
 lunghezzaParole(parolaUtenteA,parolaUtenteB)
