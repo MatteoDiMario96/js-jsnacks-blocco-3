@@ -21,11 +21,11 @@
 
 
 function lunghezzaParole (parolaA, parolaB){
-    if(parolaA.lenght == parolaB.lenght){
+    if(parolaA.length == parolaB.length){
         console.log(parolaA, parolaB)
-    } else if (parolaA > parolaB){
+    } else if (parolaA.lenght > parolaB.length){
         console.log(parolaA)
-    } else if(parolaB > parolaA){
+    } else if(parolaB.length > parolaA.length){
         console.log(parolaB)
     }
 }
