@@ -4,6 +4,7 @@ const secondUtent = Number.parseInt(prompt("Dimmi dei secondi da attendere!"), 1
 
 let clock = setInterval (function(){
     secondUtent--;
+    console.log(secondUtent);
     if(secondUtent <= 0){
         clearInterval(clock);
         alert("Interrompi Timer");
