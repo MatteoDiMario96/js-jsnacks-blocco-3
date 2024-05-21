@@ -9,4 +9,4 @@ let clock = setInterval (function(){
         clearInterval(clock);
         alert("Interrompi Timer");
     }
-})
+}, 1000)
