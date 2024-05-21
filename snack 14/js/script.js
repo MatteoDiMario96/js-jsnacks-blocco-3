@@ -1,6 +1,6 @@
 // ! Chiedi all'utente un numero di secondi da attendere e fai partire un timer da quel momento a zero secondi, interrompendo il timer
 
-const secondUtent = Number.parseInt(prompt("Dimmi dei secondi da attendere!"), 10);
+let secondUtent = Number.parseInt(prompt("Dimmi dei secondi da attendere!"), 10);
 
 let clock = setInterval (function(){
     secondUtent--;
@@ -9,4 +9,4 @@ let clock = setInterval (function(){
         clearInterval(clock);
         alert("Interrompi Timer");
     }
-}, 1000)
+}, 1000);
