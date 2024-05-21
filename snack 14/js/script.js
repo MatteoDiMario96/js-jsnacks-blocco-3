@@ -2,6 +2,10 @@
 
 let secondUtent = Number.parseInt(prompt("Dimmi dei secondi da attendere!"), 10);
 
+if(secondUtent < 1 || secondUtent > 15 || Number.isNaN(secondUtent)){
+    secondUtent = 6;
+}
+
 let clock = setInterval (function(){
     secondUtent--;
     console.log(secondUtent);
