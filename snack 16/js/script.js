@@ -8,16 +8,15 @@ const palla = {
     peso: 10,
 }
 
-let pesoModificato;
 let i = 0
 while(i < 1){
-    pesoModificato = Number.parseInt(prompt("Modifica il peso della palla!"), 10);
+    let pesoModificato = Number.parseInt(prompt("Modifica il peso della palla!"), 10);
     if(pesoModificato < 1 || pesoModificato > 1000 || Number.isNaN(pesoModificato)){
         alert("Hai sbagliato ritenta!")
         Number.parseInt(prompt("Modifica il peso della palla!"), 10);
     } else {
+        palla.peso = pesoModificato;
         i++
     }
 }
 
-palla.peso = pesoModificato;
