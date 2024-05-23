@@ -7,64 +7,64 @@ const persone = [
     {
         nome: "Matteo",
         cognome: "Di Mario",
-        'età': "27"
+        eta: "27"
     },
     {
         nome: "Matteo",
         cognome: "Di Mario",
-        'età': "15"
+        eta: "15"
     },
     {
         nome: "Matteo",
         cognome: "Di Mario",
-        'età': "19"
+        eta: "19"
     },
     {
         nome: "Matteo",
         cognome: "Di Mario",
-        'età': "12"
+        eta: "12"
     },
     {
         nome: "Matteo",
         cognome: "Di Mario",
-        'età': "33"
+        eta: "33"
     },
     {
         nome: "Matteo",
         cognome: "Di Mario",
-        'età': "18"
+        eta: "18"
     },
     {
         nome: "Matteo",
         cognome: "Di Mario",
-        'età': "11"
+        eta: "11"
     },
     {
         nome: "Matteo",
         cognome: "Di Mario",
-        'età': "45"
+        eta: "45"
     },
     {
         nome: "Matteo",
         cognome: "Di Mario",
-        'età': "19"
+        eta: "19"
     },
     {
         nome: "Matteo",
         cognome: "Di Mario",
-        'età': "8"
+        eta: "8"
     }
 ];
 
-const nuovoArrayDiPersone = persone.map((elemento) => {
-    if(elemento[età] > 18){
-        return `Con quest'età puoi guidare${elemento[età]}`
+let nuovoArrayDiPersone = persone.map((elemento) => {
+    if(elemento.eta > 18){
+        return `Con quest'età puoi guidare${elemento.eta}`
     }
 });
 
-nuovoArrayDiPersone = persone.map((elemento) => {
-    if(elemento[età] < 18){
-        return `Con quest'età mi dispiace ma non puoi guidare${elemento[età]}`
+nuovoArrayDiPersone += persone.map((elemento) => {
+    if(elemento.eta < 18){
+        return `Con quest'età mi dispiace ma non puoi guidare${elemento.eta}`
     }
 });
 
