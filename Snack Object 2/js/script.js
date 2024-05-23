@@ -80,3 +80,9 @@ const automobili = [
         alimentazione: "metano"
     },
 ]
+
+const arrayBenzina = automobili.filter((elemento) => {
+    if(automobili.alimentazione.includes("benzina"))
+    return true;
+})
+console.log(arrayBenzina)
