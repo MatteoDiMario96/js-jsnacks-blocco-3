@@ -82,7 +82,19 @@ const automobili = [
 ]
 
 const arrayBenzina = automobili.filter((elemento) => {
-    if(automobili.alimentazione.includes("benzina"))
+    if(elemento.alimentazione === "benzina")
     return true;
 })
 console.log(arrayBenzina)
+
+const arrayDiesel = automobili.filter((elemento) => {
+    if(elemento.alimentazione === "diesel")
+    return true;
+})
+console.log(arrayDiesel)
+
+const arrayAltreAuto = automobili.filter((elemento) => {
+    if(elemento.alimentazione !== "benzina" && elemento.alimentazione !== "diesel")
+    return true;
+})
+console.log(arrayAltreAuto)
