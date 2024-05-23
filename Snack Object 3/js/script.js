@@ -58,13 +58,13 @@ const persone = [
 
 let nuovoArrayDiPersone = persone.map((elemento) => {
     if(elemento.eta > 18){
-        return `Con quest'età puoi guidare${elemento.eta}`
+        return `${elemento.nome}${elemento.cognome} con quest'età puoi guidare ${elemento.eta} --`
     }
 });
 
 nuovoArrayDiPersone += persone.map((elemento) => {
     if(elemento.eta < 18){
-        return `Con quest'età mi dispiace ma non puoi guidare${elemento.eta}`
+        return `${elemento.nome}${elemento.cognome} con quest'età mi dispiace ma non puoi guidare ${elemento.eta}`
     }
 });
 
