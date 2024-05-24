@@ -57,7 +57,7 @@ const persone = [
 ];
 
 let nuovoArrayDiPersone = persone.map((elemento) => {
-        return `Sono ${elemento.nome} ${elemento.cognome}, ${ (elemento.eta > 18) ? "Puoi guidare perchè maggiorenne" : "Non puoi guidare perchè minorenne" }`
+        return `${elemento.nome} ${elemento.cognome}, ${ (elemento.eta > 18) ? "Puoi guidare perchè maggiorenne" : "Non puoi guidare perchè minorenne" }`
     
 });
 
