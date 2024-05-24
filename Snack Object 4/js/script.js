@@ -55,6 +55,24 @@ const zucchine = [
     lunghezza: '29.12' 
 }];
 
-const zucchineMenoOttoCm = zucchine.filter((zucchina) => zucchina.lunghezza < 8);
+// const zucchineMenoOttoCm = zucchine.filter((zucchina) => zucchina.lunghezza < 18);
 
-const zucchinePiuOttoCm = zucchine.filter((zucchina) => zucchina.lunghezza > 8);
+// const zucchinePiuOttoCm = zucchine.filter((zucchina) => zucchina.lunghezza > 18);
+
+const zucchineMenoOttoCm = [];
+
+const zucchinePiuOttoCm = [];
+
+let pesoTotale = 0;
+
+zucchine.forEach((zucchina) => {
+    pesoTotale += Number.parseInt(zucchina.peso);
+    if(zucchina.lunghezza < 18){
+        zucchineMenoOttoCm.push(zucchina)
+    }else if(zucchina.lunghezza > 18){
+        zucchinePiuOttoCm.push(zucchina);
+    }
+})
+
+
+console.log(pesoTotale, zucchineMenoOttoCm, zucchinePiuOttoCm)
